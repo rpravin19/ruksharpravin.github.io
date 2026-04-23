@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rukshar Pravin | Modern UI Portfolio</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg,#f8fafc,#eef2ff);
+      color:#1f2937;
+      line-height:1.6;
+      overflow-x:hidden;
+    }
+    .container{max-width:1100px;margin:auto;padding:24px}
+    .hero,.card{
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(8px);
+      border-radius: 20px;
+      padding: 36px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      animation: fadeUp 0.8s ease both;
+    }
+    .hero h1{font-size:48px;margin-bottom:10px}
+    .subtitle{font-size:20px;color:#4b5563;margin-bottom:16px}
+    .btn{
+      display:inline-block;
+      margin-top:18px;
+      padding:12px 22px;
+      border-radius:999px;
+      background:#111827;
+      color:#fff;
+      text-decoration:none;
+      transition:transform .25s ease, box-shadow .25s ease;
+    }
+    .btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.15)}
+    .skills span{
+      display:inline-block;
+      padding:10px 14px;
+      margin:6px;
+      border-radius:999px;
+      background:#ffffff;
+      box-shadow:0 2px 8px rgba(0,0,0,.06);
+      transition:transform .25s ease;
+    }
+    .skills span:hover{transform:scale(1.05)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+    .project{
+      background:#fff;
+      border-radius:16px;
+      padding:24px;
+      box-shadow:0 6px 18px rgba(0,0,0,.06);
+      transition:transform .3s ease, box-shadow .3s ease;
+    }
+    .project:hover{
+      transform:translateY(-6px);
+      box-shadow:0 12px 24px rgba(0,0,0,.1);
+    }
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(20px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>Rukshar Pravin</h1>
+      <p class="subtitle">Frontend & UI Developer | Angular • React • Modern UI</p>
+      <p>
+        Building beautiful, scalable, and high-performance web experiences with 3.5+ years of expertise.
+      </p>
+      <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+    <section class="card">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>HTML5</span><span>CSS3</span><span>SCSS</span><span>JavaScript</span>
+        <span>Angular</span><span>React</span><span>Ionic</span><span>Tailwind</span>
+      </div>
+    </section>
+
+    <section class="card" id="projects">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <div class="project">
+          <h3>Jeep India Website</h3>
+          <p>Modern responsive UI components with enhanced UX and optimized performance.</p>
+        </div>
+        <div class="project">
+          <h3>Citroën India Platform</h3>
+          <p>Scalable design system and consistent branded interfaces.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
